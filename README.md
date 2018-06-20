@@ -30,5 +30,5 @@ Data processing:
                   eg. analyzer 127.0.0.1:9092 redis 127.0.0.1 8089
 Visualization:
 ----
-    main.js: generate graph 
+    main.js: get data from redis, and generate graph by symbol and prices
     
