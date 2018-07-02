@@ -42,13 +42,39 @@ $(function() {
 		var parsed = JSON.parse(message);
 		var timestamp = parsed['Timestamp'];
 		var price = parsed['Average'];
+		var pmax = parsed['Max'];
+		var pmin = parsed['Min'];
+		var pstart = parsed['Start_price'];
+		var pend = parsed['End_price'];
 		var symbol = parsed['Symbol'];
-		var point = {};
-		point.x = timestamp;
-		point.y = price;
+
+		var point1 = {};
+		point1.x = timestamp;
+		point1.y = price;
+
+		var point2 = {};
+		point2.x = timestamp;
+		point2.y = pmax;
+
+        var point3 = {};
+        point3.x = timestamp;
+        point3.y = pmin;
+
+        var point4 = {};
+        point4.x = timestamp;
+        point4.y = pstart;
+
+        var point5 = {};
+        point5.x = timestamp;
+        point5.y = pend;
 
 		var i = getSymbolIndex(symbol, data_points);
-		data_points[i].values.push(point);
+		data_points[i].values.push(point1);
+		data_points[i].values.push(point2);
+		data_points[i].values.push(point3);
+		data_points[i].values.push(point4);
+		data_points[i].values.push(point5);
+		data_points[i].values.push(point1);
 		if (data_points[i].values.length > 100) {
 			data_point[i].values.shift();
 		}
