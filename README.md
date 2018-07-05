@@ -31,4 +31,5 @@ Data processing:
 Visualization:
 ----
     main.js: get data from redis, and generate graph by symbol and prices
-    ![image](https://{github.com/aduo122/Cryptocurrency-price-analysis-platform/blob/master/candlestick%20graph.png})
+    <img width="1080" alt="screen shot 2018-07-04 at 3 38 15 pm" src="https://user-images.githubusercontent.com/15791192/42296878-7d0f72a6-7fc8-11e8-8822-b74a7400417c.png">
+
