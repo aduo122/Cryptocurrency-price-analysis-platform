@@ -3,7 +3,7 @@ Introductions
 ========
     The Cryptocurrency price analysis platform is developed in python and JavaScript. 
     The goal is to monitor the change of Cryptocurrency price. 
-    Thanks to https://api.gdax.com, I could get the real time cryptocurrency price.
+    Thanks https://api.gdax.com for providing the real time cryptocurrency price.
 
 Pipeline
 ====
