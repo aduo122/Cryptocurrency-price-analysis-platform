@@ -7,8 +7,8 @@ Introductions
 
 Pipeline
 ====
-    price data -> kafka -> pyspark -> kafka -> redis -> node.js
-                        -> hbase
+    Price Data (Web API) -> Kafka -> Pyspark -> Kafka -> Redis -> Node.js
+                         -> Hbase
 
 Usage
 ====
